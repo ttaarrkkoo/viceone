@@ -1,1 +1,15 @@
-<p>navbar works!</p>
+<div [class.navbar]="!isMobile()" [class.hide]="isMobile()" id='sidebar'>
+          
+    <button id='closebutton' #closebutton (click)='sidebar_close()'>Close</button>
+
+       <span class='navbar-item selected'> Homepage</span>
+       <span class='navbar-item'><a href='' class='an-underline'>Hosting</a></span>
+       <span class='navbar-item'><a href='' class='an-underline'>Servers</a></span>
+       <span class='navbar-item'><a href='' class='an-underline'>Featured</a></span>
+       <span class='navbar-item'><a href='' class='an-underline'>Forums</a></span>
+       <span class='navbar-item'><a href='' class='an-underline'>Discord</a></span>
+
+       <span class='download-button'>Download</span>
+
+   </div>
+  <button id='openbutton' #openbutton (click)='sidebar_open()'>Open</button>

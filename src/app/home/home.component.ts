@@ -1,6 +1,4 @@
-import { Route } from '@angular/compiler/src/core';
 import { Component, OnInit } from '@angular/core';
-import { ITS_JUST_ANGULAR } from '@angular/core/src/r3_symbols';
 
 @Component({
   selector: 'app-home',
@@ -15,18 +13,11 @@ export class HomeComponent implements OnInit {
   }
 
 
-  sidebar_open() {
-angular.element(document.getElementById('sidebar').style.display = 'block');
-  }
-
-  sidebar_close() {
-    document.getElementById('sidebar').style.display = 'none';
-  }
-
-
   isMobile() {
     if (window.innerWidth < 768)
       return true
-  }
+      else 
+      return false
+    }
 
 }

@@ -9,7 +9,6 @@ body
     background-image: url('../../assets/images/background.png');
     background-repeat: no-repeat;
     background-position-y: 10%;
-
     margin: 0;
 }
 
@@ -34,69 +33,6 @@ a:active {
 @media (min-width: 768px) 
 {
     /* ------------------------------------------- **
-    ** Navbar 
-    ** ------------------------------------------- */
-
-    .navbar
-    {
-        position: fixed;
-        top: 0;
-
-        width: 100%;
-        height: 12vh;
-        background-color: #111111;
-
-        border-bottom: .4em solid #545454;
-    }
-
-    .navbar-item
-    {
-        color: #F5F5F5;
-        text-transform: uppercase;
-
-        font-size: 0.9em;
-        font-weight: 700;
-        letter-spacing: 0.05em;
-
-        float: left;
-        margin-top: 4.3vh;
-        margin-right: 4vw;
-    }
-
-    .navbar-item:nth-child(2)
-    {
-        margin-left: 2.5vw;
-    }
-
-    .selected
-    {
-        border-bottom: 2px solid red;
-    }
-
-    .download-button
-    {
-        color: #F5F5F5;
-        text-transform: uppercase;
-
-        font-size: 0.9em;
-        font-weight: 700;
-        letter-spacing: 0.05em;
-
-        float: right;
-        margin-right: 2.5vw;
-        margin-top: 3.4vh;
-
-        background-image: linear-gradient(#cd0d0c, #c95433);
-        padding: 0.4em 0.7em 0.3em 0.7em;
-        border-radius: 0.5em;
-    }
-
-    #close-button, #open-button
-    {
-        display: none;
-    }
-
-    /* ------------------------------------------- **
     ** Body 
     ** ------------------------------------------- */
 
@@ -118,97 +54,6 @@ a:active {
     }
 }
 
-@media (min-width: 1px) and (max-width: 767px)
-{
-    /* ------------------------------------------- **
-    ** Sidebar 
-    ** ------------------------------------------- */
-
-    .navbar 
-    {
-        height: 100%; 
-        width: 160px;
-        position: fixed;
-        z-index: 1;
-        top: 0; 
-        right: 0;
-        background-color: #111; 
-        overflow-x: hidden;
-        padding-top: 20px;
-    }
-    
-    .navbar a 
-    {
-        padding: 6px 8px 6px 16px;
-        text-decoration: none;
-        font-size: 1.35em;
-        color: #818181;
-        display: block;
-    }
-    
-    .navbar a:hover 
-    {
-        color: #f1f1f1;
-    }
-
-    .selected
-    {
-        padding: 6px 8px 6px 16px;
-        text-decoration: none;
-        font-size: 1.35em;
-        color: #f1f1f1;
-        display: block;
-    }
-
-    #close-button
-    {
-        padding: 6px 8px 6px 16px;
-        text-decoration: none;
-        font-size: 1.35em;
-        color: #818181;
-        display: block;
-
-        width: 100%;
-        text-align: left;
-    }
-
-    #open-button
-    {
-        position: absolute;
-        right: 1em;
-        top: 1em;
-
-        font-size: 1.5em;
-
-        color: #f1f1f1;
-    }
-
-    #close-button, #open-button
-    {
-        background: none;
-        border: none;   
-    }
-
-    #close-button:hover
-    {
-        background-color: #818181;
-        color: black;
-    }
-
-    #open-button:hover
-    {
-        color: #2e2e2e;
-    }
-
-    .download-button
-    {
-        display: none;
-    }
-}
-
-/*@media (max-width: 320px) 
-{
-}*/
 
 /* ------------------------------------------- **
 ** Footer 
