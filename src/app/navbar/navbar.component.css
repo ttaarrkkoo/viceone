@@ -1,15 +1,16 @@
 * {
+    display: flex;
     box-sizing: border-box;
 }
 
 body
 {
     font-family: 'Roboto Condensed', sans-serif;
-
-    background-image: url("../../assets/images/background.png");
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    background-image: url('../../assets/images/background.png');
     background-position-y: 10%;
-
+    background-size: contain;
     margin: 0;
 }
 
@@ -39,11 +40,12 @@ a:active {
 
     .navbar
     {
-        position: fixed;
-        top: 0;
-
+        
+        
+        display: block;
+        align-self: auto;
         width: 100%;
-        height: 12vh;
+        height: 80px;
         background-color: #111111;
 
         border-bottom: .4em solid #545454;
@@ -110,12 +112,10 @@ a:active {
 
     .logo
     {
-        width: 40vw;
-        height: 25vh;
+        width: 50%;
+        height: 30%; 
 
-        background-size: cover;
-
-        background-image: url("../../assets/images/logo.png");
+        background: url('../../assets/images/logo.png');
     }
 }
 
@@ -128,13 +128,13 @@ a:active {
     .navbar 
     {
         height: 100%; 
-        width: 160px;
+        width: 100%;
         position: fixed;
         z-index: 1;
         top: 0; 
         right: 0;
         background-color: #111; 
-        overflow-x: hidden;
+        overflow-x: visible;
         padding-top: 20px;
     }
     
@@ -213,7 +213,7 @@ a:active {
 
 /* ------------------------------------------- **
 ** Footer 
-** ------------------------------------------- */
+** ------------------------------------------- 
 
 .footer
 {
@@ -224,6 +224,7 @@ a:active {
     height: 10vh;
     background-color: #F5F5F5;
 }
+*/
 
 .hide {
     display: none;

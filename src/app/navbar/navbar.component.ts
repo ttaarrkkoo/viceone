@@ -12,8 +12,8 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
   }
   
-  @ViewChild('openbutton', { static: true }) sidebar: ElementRef<HTMLButtonElement>;
-  @ViewChild('closebutton', { static: true }) sidebarsecond: ElementRef<HTMLButtonElement>;
+  @ViewChild('openbutton') sidebar: ElementRef<HTMLButtonElement>;
+  @ViewChild('closebutton') sidebarsecond: ElementRef<HTMLButtonElement>;
 
   ngAfterViewInit() {
     this.sidebar_open;
@@ -21,7 +21,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   }
 
   sidebar_open() {
-    this.sidebar.nativeElement.style.display = 'none';
+    this.sidebar.nativeElement.style.display = 'block';
     console.log('a');
   }
 
